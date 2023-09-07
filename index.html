@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>High Roll</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overlock+SC&family=Overlock:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section class="high-roll">
+      <div class="container">
+        <!-- HEADER -->
+        <div class="header">
+          <div class="left-header">
+            <ion-icon name="dice-outline"></ion-icon>
+            <p class="header-title">High Roll</p>
+          </div>
+          <button class="btn btn--new">New game</button>
+        </div>
+        <h1 class="header-primary">Roll the dice</h1>
+        <!-- UPPERBOX -->
+        <div class="upper-box">
+          <!-- PLAYER 0 -->
+          <div class="player player--1 player--active">
+            <div class="score-box">
+              <p class="score-label">Score</p>
+              <p class="score score--1">100</p>
+            </div>
+            <div class="current-box">
+              <p class="current-label">Current</p>
+              <p class="current current--1">20</p>
+            </div>
+          </div>
+          <!-- DICE IMG -->
+          <div class="dice-img-box">
+            <img src="dice-1.png" atl="dice image" class="dice-img" />
+          </div>
+          <!-- PLAYER 1 -->
+          <div class="player player--2">
+            <div class="score-box">
+              <p class="score-label">Score</p>
+              <p class="score score--2">100</p>
+            </div>
+            <div class="current-box">
+              <p class="current-label">Current</p>
+              <p class="current current--2">20</p>
+            </div>
+          </div>
+        </div>
+        <!-- LOWERBOX -->
+        <div class="lower-box">
+          <button class="btn btn--roll">Roll</button>
+          <button class="btn btn--hold">Hold</button>
+        </div>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
